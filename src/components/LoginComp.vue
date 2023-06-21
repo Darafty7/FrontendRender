@@ -94,7 +94,7 @@ export default {
   methods: {
     postLogin() {
 
-      axios.post('http://localhost:4000/login', this.persona)
+      axios.post('https://sntp.onrender.com/login', this.persona)
         .then((response) => {
           if (response.data.code === 201) {
             Cookies.set('token', response.data.token)
